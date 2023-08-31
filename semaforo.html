@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semáforo</title>
+</head>
+<body>
+    <div id="painelSemaforo">
+        <div id="vermelho">
+            <img src="vermelhoLigado.png" alt="img_vermelho">
+        </div>
+        <div id="amarelo">
+            <img src="amareloLigado.png" alt="img_amarelo">
+        </div>
+        <div id="verde">
+            <img src="verdeLigado.png" alt="img_verde">
+        </div>
+
+        <div>
+            <button onclick="semaforoAutomatico()" 
+            style="padding: 10px 20px;
+            font-size: 16px;
+            background-color: #34db7f;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 50px;" 
+            >Automático</button>
+
+            <button onclick="interromperAutomacao()"
+            style="padding: 10px 20px;
+            font-size: 16px;
+            background-color: #b42b2b;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;"
+            >Pausar</button>
+        </div>
+    </div>
+
+    <script>
+        function onOFFvermelho(){
+            var objImvermelho = document.getElementById("vermelho");
+            if (objImvermelho.querySelector("img").getAttribute("src") === "vermelhoLigado.png") {
+                objImvermelho.querySelector("img").setAttribute("src", "vermelhoDesligado.png");
+            }
+            else {
+                objImvermelho.querySelector("img").setAttribute("src", "vermelhoLigado.png");
+            }
+        }
+
+        function onOFFamarelo(){
+            var objImAmarelo = document.getElementById("amarelo");
+            if (objImAmarelo.querySelector("img").getAttribute("src") === "amareloLigado.png") {
+                objImAmarelo.querySelector("img").setAttribute("src", "amareloDesligado.png");
+            }
+            else {
+                objImAmarelo.querySelector("img").setAttribute("src", "amareloLigado.png");
+            }
+        }
+
+        function onOFFverde(){
+            var objImverde = document.getElementById("verde");
+            if (objImverde.querySelector("img").getAttribute("src") === "verdeLigado.png") {
+                objImverde.querySelector("img").setAttribute("src", "verdeDesligado.png");
+            }
+            else {
+                objImverde.querySelector("img").setAttribute("src", "verdeLigado.png");
+            }
+        }
+
+        function semaforoAutomatico() {
+            setTimeout(() => {
+                vermelhoLigado.png
+            }, "1000");
+
+            setTimeout(() => {
+                amareloLigado.png
+            }, "1500");
+
+            setTimeout(() => {
+                verdeLigado.png
+            }, "2000");
+        }
+
+        function interromperAutomacao(){
+            
+        }
+    </script>
+
+<style>
+    #painelSemaforo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #painelSemaforo div {
+        margin: 10px;
+    }
+
+    #painelSemaforo img {
+        width: 200px;
+    }
+
+    pausee {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #db3434;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</body>
+</html>
